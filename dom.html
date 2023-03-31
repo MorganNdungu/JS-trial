@@ -8,7 +8,7 @@
     <title>Document</title>
 </head>
 <body>
-    <input type="number" id="num1" placeholder="enter number"><br>
+     <!-- <input type="number" id="num1" placeholder="enter number"><br>
     <input type="number" id="num2" placeholder="enter number"><br>
     <button onclick="sumNumber()">answer</button>
    <script>
@@ -19,7 +19,18 @@
     let sum=parseInt(num1)+ parseInt(num2);
     
     alert(sum);
+} -->
 
+
+<button onmouseover="displayAlert()">Button</button><br>
+<button onmouseout="Alert()">mouse me</button>
+
+<script>
+function displayAlert(){
+    alert("on Mouse Over");
+}
+function Alert(){
+    alert("hey there am mouse out");
 }
    </script>
 </body>
