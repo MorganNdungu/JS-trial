@@ -11,8 +11,9 @@ function clockRotating(){
     var getHours=date.getHours()/12;
 
     secondHand.style.transform="rotate("+getSeconds*360 +"deg)"
-    minHand.style.transform="rotate("+getMinutes*360 +"deg)"
     hourHand.style.transform="rotate("+getHours*360 +"deg)"
+    minHand.style.transform="rotate("+getMinutes*360 +"deg)"
+
 
 
     
