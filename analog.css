@@ -48,13 +48,13 @@ body{
     height: 100%;
     text-align: center;
 }
-.clock-number::after{
+.clock-number::after {
     content: "";
     position: absolute;
     height: 13px;
-    width: 3px;
-    background: #0000;
+    width: 5px;
     top: 13px;
+    background: #0000;
 }
 .clock-number> div{
     padding: 12px;
@@ -146,17 +146,19 @@ body{
 .second-hand{
     height: 32%;
     width: 1px;
-    background: blue;
+    background: rgb(214, 15, 15);
 
 }
 .minute-hand{
-    height: 30%;
-    width: 4px;
-    background: #0000;
+    height: 32%;
+    width: 3px;
+    background: rgb(22, 22, 22);
+
 }
+
 .hour-hand{
     height: 20%;
-    width: 8px;
+    width: 5px;
     background: green;
 }
 .second-hand::after{
