@@ -5,58 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="calc.css">
-    <title>Document</title>
+    <title>My Calculator</title>
 </head>
 
 <body>
      <h1>Calculator</h1>
      <div class="container">
-    <input type="text" id="result" disabled>
-    <br>
-    <div class="first">
-    <button onclick="appendNumber('1')">1</button>
-    <button onclick="appendNumber('2')">2</button>
-    <button onclick="appendNumber('3')">3</button>
-    <button onclick="appendOperator('+')">+</button>
-    <br>
-    </div>
-    <button onclick="appendNumber('4')">4</button>
-    <button onclick="appendNumber('5')">5</button>
-    <button onclick="appendNumber('6')">6</button>
-    <button onclick="appendOperator('-')">-</button>
-    <br>
-    <button onclick="appendNumber('7')">7</button>
-    <button onclick="appendNumber('8')">8</button>
-    <button onclick="appendNumber('9')">9</button>
-    <button onclick="appendOperator('*')">*</button>
-    <br>
-    <button onclick="appendNumber('0')">0</button>
-    <button onclick="clearResult()">C</button>
-    <button onclick="calculateResult()">=</button>
-    <button onclick="appendOperator('/')">/</button>
-    </div>
+        <div id="display">
+            <td><input class="textbox" type="text" id="results"/></td>
+        </div>
+        <div class="calbuttons">
+            <tr>
+                <td><input type="button" value="C" onclick="clr()"></td>
+                <td><input type="button" value="/" onclick="dis('/')"></td>
+                <td><input type="button" value="*" onclick="dis('*')"></td>
+                <td><input type="button" value="Back" onclick="clr()"></td>
+
+            </tr>
+            <tr>
+                <td><input type="button" value="7" onclick="dis('7')"></td>
+                <td><input type="button" value="8" onclick="dis('8')"></td>
+                <td><input type="button" value="9" onclick="dis('9')"></td>
+                <td><input type="button" value="-" onclick="dis('-')"></td>
+
+            </tr>
+            <tr>
+                <td><input type="button" value="4" onclick="dis('4')"></td>
+                <td><input type="button" value="5" onclick="dis('5')"></td>
+                <td><input type="button" value="6" onclick="dis('6')"></td>
+                <td><input type="button" value="+" onclick="dis('+')"></td>
+
+            </tr>
+            <tr>
+                <td><input type="button" value="1" onclick="dis('1')"></td>
+                <td><input type="button" value="2" onclick="dis('2')"></td>
+                <td><input type="button" value="3" onclick="dis('3')"></td>
+                <td><input type="button" value="." onclick="dis('.')"></td>
+
+            </tr>
+            <tr>
+                <td><input type="button" value="0" onclick="dis('0')"></td>
+                <td><input type="button" value="(" onclick="dis('(')"></td>
+                <td><input type="button" value=")" onclick="dis(')')"></td>
+                <td><input type="button" value="=" onclick="dis('=')"></td>
+
+            </tr>
+        </div>
+     </div>
+        
+    
+    
     <script>
-        let result = '';
-
-function appendNumber(num) {
-  result += num;
-  document.getElementById('result').value = result;
-}
-
-function appendOperator(operator) {
-  result += operator;
-  document.getElementById('result').value = result;
-}
-
-function clearResult() {
-  result = '';
-  document.getElementById('result').value = result;
-}
-
-function calculateResult() {
-  result = eval(result);
-  document.getElementById('result').value = result;
-}
+    function dis(val){
+        document.getElementById("result")
+    }
     </script>
 </body>
 </html>
