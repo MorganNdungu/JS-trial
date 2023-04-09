@@ -144,13 +144,13 @@ body{
     border-radius: 12px;
 }
 .second-hand{
-    height: 32%;
+    height: 35%;
     width: 1px;
     background: rgb(214, 15, 15);
 
 }
 .minute-hand{
-    height: 32%;
+    height: 27%;
     width: 3px;
     background: rgb(22, 22, 22);
             
@@ -170,22 +170,4 @@ body{
     left: 50%;
     transform:  translate(-50%);
     top: -6%;
-}
-.current-day{
-    position: absolute;
-    font-size: 12px;
-    font-weight: bold;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 25%;
-}
-.current-seconds{ 
-    position: absolute;
-    font-size: 12px;
-    font-weight: bold;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 25%;
-    color: #ffff;
-    padding: 4px;
 }
