@@ -1,54 +1,51 @@
-.container{
+.calculator{
     height: 500px;
     max-width: 500px;
     margin: 10px auto 0 auto;
     background-color: grey;
 }
-#display{
+.display-box{
 height: 50px;
 line-height: 70px;
 padding: 20px 0px;
 font-size: 50px;
 background: linear-gradient(90deg, #2100ff 60%, #fff 100%);
 }
-#display> input{
-    color: white;
+.display-box> input{
+    color: #000000;
     font-size: 50px;
 }
 .textbox {
-    background: transparent url(Custom\ Hip\ Hop\ Jewelry\ _\ Iced\ Chains\ _\ Gold\ Presidents\ \(1\).jpg) repeat-x;
-    border: 0px solid #0bd3ea;
-    outline: 0;
+    border: 0px;
+    outline: 0px;
     height: 50px;
     width: 275px;
     padding: 0 110px;
-    text-align: right;
-    font-size: 30px;
-}
+    text-align: center;
+    font-size: 20px;
+} 
 .calbuttons{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 .calbuttons > input {
     padding: 20px;
-    color: #0000;
-    font-size: 20px;
+    color: #2100ff;
+    font-size: 30px;
 
 }
-/* .input[type="button"], input[text="text"]{
+.input[type="button"], input[text="text"]{
     padding: 9px 23px;
     width: 200px;
-}
-.button{
+} .button{
     border: 0.5px solid #999;
     line-height: 100px;
     text-align: center;
     font-size: 25px;
     cursor: pointer;
-
 }
 .button:hover{
-    background-color: #f4dd84;
+    background-color: #30be14;
     color:white ;
     transition: 0.5s ease-in-out;
-}  */
+}  
