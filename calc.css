@@ -2,7 +2,7 @@
     height: 500px;
     max-width: 500px;
     margin: 10px auto 0 auto;
-    box-shadow: 0px 0px 43px 17px rgba(red, green, blue, alpha);
+    background-color: grey;
 }
 #display{
 height: 50px;
@@ -11,13 +11,13 @@ padding: 20px 0px;
 font-size: 50px;
 background: linear-gradient(90deg, #2100ff 60%, #fff 100%);
 }
-#dispplay> input{
-    color: #fff;
+#display> input{
+    color: white;
     font-size: 50px;
 }
-.textbox{
+.textbox {
     background: transparent url(Custom\ Hip\ Hop\ Jewelry\ _\ Iced\ Chains\ _\ Gold\ Presidents\ \(1\).jpg) repeat-x;
-    border: 0px solid #999;
+    border: 0px solid #0bd3ea;
     outline: 0;
     height: 50px;
     width: 275px;
@@ -35,7 +35,7 @@ background: linear-gradient(90deg, #2100ff 60%, #fff 100%);
     font-size: 20px;
 
 }
-input[type="button"], input[text="text"]{
+/* .input[type="button"], input[text="text"]{
     padding: 9px 23px;
     width: 200px;
 }
@@ -51,4 +51,4 @@ input[type="button"], input[text="text"]{
     background-color: #f4dd84;
     color:white ;
     transition: 0.5s ease-in-out;
-}
+}  */

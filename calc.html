@@ -6,6 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="calc.css">
     <title>My Calculator</title>
+    <!-- <script>
+        function dis(val){
+            document.getElementById("redult").value+=val
+        }
+        function solve(){
+            let x= document.getElementById("result").value
+            let y= eval(x)
+            document.getElementById("result").value=y
+        }
+        function clr(){
+            document.getElementById("result").value=""
+        }
+    </script> -->
 </head>
 
 <body>
@@ -16,10 +29,10 @@
         </div>
         <div class="calbuttons">
             <tr>
-                <td><input type="button" value="C" onclick="clr()"></td>
+                <td><input type="button" value="C" onclick="clr('')"></td>
                 <td><input type="button" value="/" onclick="dis('/')"></td>
                 <td><input type="button" value="*" onclick="dis('*')"></td>
-                <td><input type="button" value="Back" onclick="clr()"></td>
+                <td><input type="button" value="Back" onclick="clr('')"></td>
 
             </tr>
             <tr>
