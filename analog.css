@@ -10,14 +10,14 @@ body{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 @keyframes clock-animation{
-    0%{
+    /* 0%{
         background: purple;
 
     }
     50%{
 
         background: blue;
-    }
+    } */
     100%{
         background: yellow;
     }
