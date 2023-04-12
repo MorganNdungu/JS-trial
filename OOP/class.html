@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class</title>
+</head>
+<body>
+    <script>
+        class Student{
+            constructor(email, name){
+                this.email=email;
+                this.name=name;
+            }
+            printDetail(){
+                console.log(`your email is:${this.email} and your name is ${this.name}`);
+            }
+        }
+        let Student1= new Student("morgansingh@gmail.com", "Morgan Njihia");
+        Student1.printDetail();
+    </script>
+</body>
+</html>
