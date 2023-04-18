@@ -9,13 +9,13 @@
 <body>
     <script>
     class Person {
-        #name;
-        #age;
-        #gender;
+        // #name;
+        // #age;
+        // #gender;
         constructor(name,age,gender) {
-            this.#name = name;
-            this.#age = age;
-            this.#gender = gender;
+            this.name = name;
+            this.age = age;
+            this.gender = gender;
         }
         details(){
             console.log(` name: ${this.name} age ${this.age}, gender ${this.gender}`);
@@ -42,7 +42,7 @@
         }
         teacherdetails(){
             super.details();
-            console.log(`Occupation is: ${this.occupation} Work: setting ${this.work}`)
+            console.log(`Occupation is: ${this.occupation}, Work: setting ${this.work}`)
         }
     }
     
