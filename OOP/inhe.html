@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    class Person {
+        #name;
+        #age;
+        #gender;
+        constructor(name,age,gender) {
+            this.#name = name;
+            this.#age = age;
+            this.#gender = gender;
+        }
+        details(){
+            console.log(`my name is: ${this.name} aged ${this.age}, gender ${this.gender}`);
+        }
+    }
+    
+    class student extends Person {
+        constructor(name,age,gender,course,work) {
+            super(name,age,gender);
+            this.course = course;
+            this.work = work;
+        }
+        studentdetails(){
+            super.details();
+            console.log(`you are taking ${this.course} and currently having ${this.work}`)
+        }
+    }
+    
+    class teacher extends Person{
+        constructor(name, age, gender,occupation, work){
+            super(name, age, gender);
+            this.occupation=occupation;
+            this.work=work;
+        }
+        teacherdetails(){
+            super.details();
+            console.log(`your job is ${this.occupation} and currently setting an ${this.work}`)
+        }
+    }
+    
+    class doctor extends Person{
+        constructor(name, age, gender, work,duty){
+            super(name, age, gender);
+            this.work=work;
+            this.duty=duty;
+        }
+        doctordetails(){
+            super.details();
+                console.log(`your job is ${this.work} and currently giving a ${this.duty}`);
+            }
+    }
+    
+    
+    let morgan= new student("morgan","24",": male","software dev","exams")
+    let jane= new teacher("jane","22",": female","cyber sec","exam")
+    let charles= new doctor("charles","20",": male","nurse","prescription")
+    morgan.studentdetails();
+    jane.teacherdetails();
+    charles.doctordetails();
+</script> 
+</body>
+</html>
