@@ -18,7 +18,7 @@
             this.#gender = gender;
         }
         details(){
-            console.log(`my name is: ${this.name} aged ${this.age}, gender ${this.gender}`);
+            console.log(` name: ${this.name} age ${this.age}, gender ${this.gender}`);
         }
     }
     
@@ -30,7 +30,7 @@
         }
         studentdetails(){
             super.details();
-            console.log(`you are taking ${this.course} and currently having ${this.work}`)
+            console.log(`Course Name ${this.course} , sitting for: ${this.work}`)
         }
     }
     
@@ -42,7 +42,7 @@
         }
         teacherdetails(){
             super.details();
-            console.log(`your job is ${this.occupation} and currently setting an ${this.work}`)
+            console.log(`Occupation is: ${this.occupation} Work: setting ${this.work}`)
         }
     }
     
@@ -54,7 +54,7 @@
         }
         doctordetails(){
             super.details();
-                console.log(`your job is ${this.work} and currently giving a ${this.duty}`);
+                console.log(`job: ${this.work} , Duty: ${this.duty}`);
             }
     }
     
