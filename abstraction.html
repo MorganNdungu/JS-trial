@@ -8,7 +8,30 @@
 </head>
 <body>
     <script>
-        
+        class Employee{
+            #monthlyBonus;
+            constructor(name, age, salary){
+                this.name=name;
+                this.age=age;
+                this.salary=salary;
+                this.#monthlyBonus=2000;
+            }
+            #finalSalary(){
+                let FinalSalary= this.salary + this.#monthlyBonus;
+                console.log("your final salary is:" + FinalSalary)
+            }
+            // get getEmployeeDetails(){
+            //     return(`your name is: ${this.name}, you are ${this.age}years old, your monthly is ${this.salary}`);
+            //     return this.#finalSalary();
+            // }
+            EmpDetail(){
+               // return(`your name is: ${this} , you are ${this.age}years old, your monthly is ${this.salary}`);
+                return this.#finalSalary();
+
+            }
+        }
+       let employ1= new Employee ("morgan", 24 , 5000)
+        console.log(employ1.EmpDetail());
     </script>
 </body>
 </html>
