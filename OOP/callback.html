@@ -4,10 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="call.js">
+    <!-- <link rel="stylesheet" href="/OOP/call.js"> -->
     <title>Document</title>
 </head>
 <body>
-    
+    <script>
+        function showLoading(){
+    console.log("1. Loading screen appeared");
+}
+function hideLoading(){
+    console.log("4. Loading screen hidden");
+}
+function getData(callback){
+    console.log("2. start pulling data");
+    setTimeout(()=>{
+        console.log("3. finished pulling data");
+        callback();
+    }, 2000);
+}
+showLoading();
+getData(hideLoading);
+    </script>
 </body>
 </html>
