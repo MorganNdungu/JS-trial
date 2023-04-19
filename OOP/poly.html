@@ -17,12 +17,17 @@
             }
         }
         class cat extends animal{
+            constructor(name){
+                super(name);
+            }
+
             eat(){
-                console.log(`name is: ${this.name}+ eats rats`);
+                console.log(`my  ${this.name} eats rats`);
             }
         }
-        let cat=new animal ("fluffy");
-        console.log(aminal.eat());
+        let mycat=new cat ("fluffy");
+        mycat.eat();
+        
     </script>
 </body>
 </html>
