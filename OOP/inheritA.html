@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Person {
+            #name;
+            #age;
+            #gender;
+            constructor(name,age,gender){
+                this.#name=name;
+                this.#age=age;
+                this.#gender=gender;
+            }
+        eat(){
+            console.log ("Persons eat fish");
+        }
+        walk (){
+            console.log ("Everyone walks");
+        }
+        }
+        class student extends Person {
+            #program;
+            #year;
+            constructor(name,age, gender ,program,year){
+                super (name,age,gender);
+                this.#program=program;
+                this.#year= year;
+            }
+            study(){
+            console.log(`He takes ${this.#program} and is in ${this.#year}`);
+        }
+        }
+     
+        class teacher extends Person{
+            #designation;
+            #salary;
+            constructor(name,age,gender,designation,salary){
+                super (name,age, gender);
+                this.#designation=designation;
+                this.#salary=salary;
+            }
+        }
+        class doctor extends Person{
+            #designation;
+            #salary;
+            constructor(name,age,gender,designation,salary){
+                super (name,age, gender);
+                this.#designation=designation;
+                this.#salary=salary;
+            }
+        }
+    </script>
+</body>
+</html>
