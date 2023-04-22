@@ -50,10 +50,10 @@
                 this.#salary=salary;
             }
             teach(){
-                console.log(`designated as ${this.#designation}, teaches for a salary of $${this.#salary}`);
+                console.log(`${this.name} aged ${this.age} ${this.gender}, designated as ${this.#designation}, teaches for a salary of $${this.#salary}`);
             }
             marksExam(){
-                console.log(`the ${this.#designation} marks exam and gets paid a salary of $${this.#salary}`);
+                console.log(`${this.name} aged ${this.age} ${this.gender} is the ${this.#designation} who marks exam and gets paid a salary of $${this.#salary}`);
             }
 
         }
@@ -66,21 +66,21 @@
                 this.#salary=salary;
             }
             checkUp(){
-                console.log (`a ${this.#designation} does check ups for various infections and gets a salary of ${this.#salary}`);
+                console.log (`${this.name} aged ${this.age} ${this.gender} a ${this.#designation} does check ups for various infections and gets a salary of ${this.#salary}`);
             }
             prescribe(){
-                console.log(`${this.#designation} prescribes medications and also get a salary for $${this.#salary}`);
+                console.log(`${this.name} aged ${this.age} ${this.gender} ${this.#designation} prescribes medications and also get a salary for $${this.#salary}`);
             }
        }
-       let doctor= new Doctor ("pharmarcist", 100000);
+       let doctor= new Doctor ("mitchel","19","female","inter", "100000");
        doctor.checkUp();
        doctor.prescribe();
        let teacher= new Teacher ("Deputy proncipal", 50000);
        teacher.teach();
        teacher.marksExam();
-       let student = new Student ("Sof Dev, 2023");
-       student.study();
-       student.heldExam();
+    //    let student = new Student ("Sof Dev, 2023");
+    //    student.study();
+    //    student.heldExam();
 </script>
 </body>
 </html>
