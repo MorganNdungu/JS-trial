@@ -18,13 +18,13 @@
                 this.#gender=gender;
             }
         eat(){
-            console.log ("Persons eat fish");
+            console.log (`my name is ${this.#name}, am ${this.#age} years old ${this.#gender} and I eat snacks`);
         }
         walk (){
-            console.log ("Everyone walks");
+            console.log (` ${this.#name}, aged ${this.#age} who is a ${this.#gender}  walks 10km`);
         }
         }
-        class student extends Person {
+        class Student extends Person {
             #program;
             #year;
             constructor(name,age, gender ,program,year){
@@ -33,11 +33,15 @@
                 this.#year= year;
             }
             study(){
-            console.log(`He takes ${this.#program} and is in ${this.#year}`);
-        }
+            console.log(`I takes ${this.#program} and am in ${this.#year}`);
+            }
+            heldExam(){
+                console.log (`undertaking my exam for ${this.#program}, year ${this.#year} `);
+            }
+
         }
      
-        class teacher extends Person{
+        class Teacher extends Person{
             #designation;
             #salary;
             constructor(name,age,gender,designation,salary){
@@ -45,8 +49,15 @@
                 this.#designation=designation;
                 this.#salary=salary;
             }
+            teach(){
+                console.log(`designated as ${this.#designation}, teaches for a salary of $${this.#salary}`);
+            }
+            marksExam(){
+                console.log(`the ${this.#designation} marks exam and gets paid a salary of $${this.#salary}`);
+            }
+
         }
-        class doctor extends Person{
+        class Doctor extends Person{
             #designation;
             #salary;
             constructor(name,age,gender,designation,salary){
@@ -54,7 +65,19 @@
                 this.#designation=designation;
                 this.#salary=salary;
             }
-        }
-    </script>
+            checkUp(){
+                console.log (`a ${this.#designation} does check ups for various infections and gets a salary of ${this.#salary}`);
+            }
+            prescribe(){
+                console.log(`${this.#designation} prescribes medications and also get a salary for $${this.#salary}`);
+            }
+       }
+       let doctor= new Doctor ("pharmarcist", 100000);
+       doctor.checkUp();
+       doctor.prescribe();
+       let teacher= new Teacher ("Deputy proncipal", 50000);
+       teacher.teach();
+       teacher.marksExam();
+</script>
 </body>
 </html>
