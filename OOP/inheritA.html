@@ -33,10 +33,10 @@
                 this.#year= year;
             }
             study(){
-            console.log(`I takes ${this.#program} and am in ${this.#year}`);
+            console.log(`${this.name} aged ${this.age} ${this.gender}  takes ${this.#program} and am in ${this.#year}`);
             }
             heldExam(){
-                console.log (`undertaking my exam for ${this.#program}, year ${this.#year} `);
+                console.log (`${this.name} aged ${this.age} ${this.gender} undertaking the exam for ${this.#program}, year ${this.#year} `);
             }
 
         }
@@ -75,12 +75,12 @@
        let doctor= new Doctor ("mitchel","19","female","inter", "100000");
        doctor.checkUp();
        doctor.prescribe();
-       let teacher= new Teacher ("Deputy proncipal", 50000);
+       let teacher= new Teacher ("Morgan","45","male","Deputy proncipal", 50000);
        teacher.teach();
        teacher.marksExam();
-    //    let student = new Student ("Sof Dev, 2023");
-    //    student.study();
-    //    student.heldExam();
+       let student = new Student ("Jane,22,Female,Sof Dev, 2023");
+       student.study();
+       student.heldExam();
 </script>
 </body>
 </html>
