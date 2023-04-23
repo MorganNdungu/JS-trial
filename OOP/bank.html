@@ -9,35 +9,42 @@
 <body>
     <script>
         class Account{
-            #number;
-            #name;
+            // #number;
+            // #name;
             // #balance
-            constructor(number, name,balance){
-                this.#number=number;
-                this.#name=name;
-                this.balance=balance;
+            constructor(number, name,currentbalance){
+                this.number=number;
+                this.name=name;
+                this.balance=parseFloat (currentbalance);
             }
             deposit(amount){
-                this.balance+= amount;
-                console.log(`account name ${this.#name} and number ${this.#number} your balance is ${this.balance}`);
+                this.balance += amount;
+                console.log(`your deposit is ${amount} your new balance is ${this.balance}`);
             }
-            Balance(){
-                console.log(`currrent balance for account number ${this.#number} name ${this.#name} is ${this.balance}`);
+            getBalance(){
+                console.log(`currrent balance for account number ${this.number} name ${this.name}`);
+                return this.balance
             }
             withdraw(amount){
                 if (this.balance>=amount){
                     this.balance-= amount;
-                    console.log(`amount withdrew is {amount}, Your new balance is {this.balance}`);
+                    console.log(`amount withdrew is ${amount}, Your new balance is ${this.balance}`);
                 }else{
                     console.log (`sorry you have insufficient balance`);
                 }
             }
-          
-            
+            checkBalance(){
+                console.log(`your current balance is ${this.balance}`);
+            }
+            accountInfo(){
+                console.log(`account name: ${this.name}\n account number: ${this.number} \n balance:${this.balance}`)
+            }
         }
-        let myaccount= new Account("Morgan, 01112345, 100000");
-        myaccount.deposit();
-        myaccount.
+        let myaccount= new Account("Morgan Ngung'u", "01112345", "100000");
+        myaccount.deposit(150000);
+        myaccount.withdraw(50000);
+        myaccount.checkBalance();
+        myaccount.accountInfo();
     </script>
 </body>
 </html>
